@@ -1,0 +1,35 @@
+# Checkpoint registry. A model is served ONLY when status == "available",
+# its file exists in checkpoints/, and its SHA-256 matches.
+# Status values: available | trained_not_published | training_ready | not_trained
+models:
+  01_mlp:
+    status: available
+    file: mlp_adult.pt
+    sha256: 6fc486944c61204d413f5e647ec37135b036b4d298c958e93e6d5b226af46d30
+    notes: "UCI Adult income >50K; CPU training; see checkpoints/mlp_adult_report.json"
+  02_cnn: {status: not_trained, notes: "Architecture not yet implemented"}
+  03_rnn: {status: not_trained, notes: "Architecture not yet implemented"}
+  04_lstm: {status: not_trained, notes: "Architecture not yet implemented"}
+  05_gru: {status: not_trained, notes: "Architecture not yet implemented"}
+  06_autoencoder: {status: not_trained, notes: "Architecture not yet implemented"}
+  07_vae: {status: not_trained, notes: "Architecture not yet implemented"}
+  08_gan: {status: not_trained, notes: "Architecture not yet implemented"}
+  09_transformer: {status: not_trained, notes: "Architecture not yet implemented"}
+  10_bert: {status: not_trained, notes: "Architecture not yet implemented"}
+  11_gpt: {status: not_trained, notes: "Architecture not yet implemented"}
+  12_resnet: {status: not_trained, notes: "Architecture not yet implemented"}
+  13_densenet: {status: not_trained, notes: "Architecture not yet implemented"}
+  14_vit: {status: not_trained, notes: "Architecture not yet implemented"}
+  15_unet: {status: not_trained, notes: "Architecture not yet implemented"}
+  16_yolo: {status: not_trained, notes: "Architecture not yet implemented"}
+  17_siamese: {status: not_trained, notes: "Architecture not yet implemented"}
+  18_seq2seq: {status: not_trained, notes: "Architecture not yet implemented"}
+  19_diffusion: {status: not_trained, notes: "Architecture not yet implemented"}
+  20_gnn: {status: not_trained, notes: "Architecture not yet implemented"}
+  medical_brain_mri_classification: {status: not_trained, notes: "Requires GPU and licensed MRI dataset; not started"}
+  medical_brain_tumour_segmentation: {status: not_trained, notes: "Requires GPU and paired MRI masks; not started"}
+  medical_tumour_detection_yolo: {status: not_trained, notes: "Requires GPU and bounding-box dataset; not started"}
+  medical_tumour_instance_maskrcnn: {status: not_trained, notes: "Requires GPU and instance masks; not started"}
+  agri_leaf_disease_25class: {status: not_trained, notes: "Requires dataset verified to contain 25 classes; not started"}
+  agri_leaf_disease_segmentation: {status: not_trained, notes: "Requires pixel-level disease masks; not started"}
+  agri_cotton_disease_detection: {status: not_trained, notes: "Requires bounding-box annotations; not started"}

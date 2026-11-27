@@ -1,0 +1,117 @@
+{
+  "model": "01_mlp",
+  "dataset": "UCI Adult (adult.data train/val split, adult.test held out)",
+  "status": "trained_cpu_metrics_recorded",
+  "config": {
+    "hidden": [
+      128,
+      64
+    ],
+    "dropout": 0.2,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 256,
+    "max_epochs": 30,
+    "patience": 5
+  },
+  "threshold": 0.36000000000000004,
+  "epochs_run": 12,
+  "train_seconds": 6.2,
+  "train_samples": 27146,
+  "val_samples": 3016,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.38448783964553246,
+      "val_loss": 0.3375842869281769
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3261619135215939,
+      "val_loss": 0.3217637836933136
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3193463629333551,
+      "val_loss": 0.31861570477485657
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.31641080471837496,
+      "val_loss": 0.3177742063999176
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3127980440896745,
+      "val_loss": 0.31936806440353394
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3110699724469954,
+      "val_loss": 0.3202967643737793
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.3074517067619794,
+      "val_loss": 0.31723836064338684
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.30526794457957307,
+      "val_loss": 0.32067441940307617
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.3048385050366519,
+      "val_loss": 0.31887057423591614
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.30189868808451376,
+      "val_loss": 0.3201250433921814
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.3000209295898094,
+      "val_loss": 0.3193969428539276
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.2993139069718688,
+      "val_loss": 0.31967833638191223
+    }
+  ],
+  "val_metrics": {
+    "accuracy": 0.8415119363395226,
+    "precision": 0.6514983351831298,
+    "recall": 0.7816245006657789,
+    "f1": 0.7106537530266344,
+    "roc_auc": 0.9109878513710932,
+    "confusion_matrix": {
+      "tn": 1951,
+      "fp": 314,
+      "fn": 164,
+      "tp": 587
+    },
+    "n": 3016
+  },
+  "test_metrics": {
+    "accuracy": 0.8357901726427622,
+    "precision": 0.6395269501933136,
+    "recall": 0.76,
+    "f1": 0.6945782388538965,
+    "roc_auc": 0.9079693923677199,
+    "confusion_matrix": {
+      "tn": 9775,
+      "fp": 1585,
+      "fn": 888,
+      "tp": 2812
+    },
+    "n": 15060
+  },
+  "checkpoint": {
+    "file": "mlp_adult.pt",
+    "bytes": 102623,
+    "sha256": "6fc486944c61204d413f5e647ec37135b036b4d298c958e93e6d5b226af46d30"
+  }
+}

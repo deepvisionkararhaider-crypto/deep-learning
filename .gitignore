@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.pytest_cache/
+datasets/raw/
+datasets/processed/
+.env
+.dev.vars
+.wrangler/
+.DS_Store
+*.log
